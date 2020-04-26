@@ -1,0 +1,108 @@
+body {
+	margin: 10px 20px 10px 20px; /*abstand oben, rechts, unten, links*/
+	min-width: 900; /*minimale größe*/
+	max-width: 100%; /*maximale größe*/
+}
+header {
+    width: 100%; /*größenangabe*/
+    height: 65px;
+    position: fixed; /*position abhängig vom browserfenster*/
+    top: 0; /*abstand oben*/
+    left: 10; /*abstand links*/
+    background-color: darkgreen;
+}
+footer {
+    width: 100%; /*größenangabe*/
+    height: 65px;
+    margin-left: 25%; /*einzug links*/
+    margin-top: 5%; /*einzug oben*/
+    background-color: white;
+    position: fixed; /*position abhängig vom browserfenster*/
+    text-align: left;
+    bottom: 0%;
+}
+#hü /*überschrift_oben*/ {
+    background-color: white;
+    text-align: center;
+}
+ul /*liste modifizieren*/ {
+	list-style-type: none; /*entfernt die Punkte bei der Navigation*/
+	margin-right: 10px; /*abstand rechts*/
+	margin-top: -20px; /*abstand oben*/
+	padding: 0;	/*inneren Elemente direkt anschließen*/
+	width: 25%;	/*Navigationsleiste nimmt 25% der Seite ein*/
+	background-color: #D7E4D9;	
+	position: fixed; /*position abhängig vom browserfenster*/
+	height: 100%; /*höhe der Navigationsleiste*/
+	overflow: auto; /*wenn zu viel, wird gescrolt*/
+}
+li a /*alle "a" die sich in der "li" befinden werden bearbeitet alle anderen "a" die sich nicht im "li" befinden, werden ignoriert*/ {
+	display:block;	/*!!!! display lernen*/
+	color: black;	
+	padding: 10px 0 10px 15px; /*Abstand einfügen*/
+	text-decoration:none; /*punkte entfernen*/
+}
+li a.aktiv /*spricht alle aktiven links an*/ {
+	background-color: #00510E;
+	color: white;
+}
+li a:hover:not(.aktiv) /*alle "li" über die gefahren wird -> not() = wenn der link nicht aktiv ist, mach das*/{
+	background-color: #19892C;
+	color: white;
+}
+#div1 /*text abschnitt*/ {
+	margin-left: 25%; /*abstand links*/
+    margin-top: 10%; /*abstand oben*/
+    margin-bottom: 10%;
+	padding: 1px 15px; /*innenabstand*/
+	height: 100%; /*größe*/
+}
+.über /*link zur schnell übersicht (beruf/schule)*/ {
+	list-style-type: none;
+	color: #00510E;
+}
+#foto_ich /*foto bearbeiten*/ {
+	float: right; /*ausrichtung*/
+	width: 25%; /*göße*/
+}
+#skype {
+    color: darkgreen;
+}
+#copy /*© 2020 */ {
+    background-color: darkgreen;
+    color: white;
+    font-size: 20pt;
+	font-family: Helvetica, sans-serif;
+	text-align:left;
+}
+.box{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items:flex-start;
+  border:1px solid #e3f2fd;
+  margin-left: 0%;
+}
+table /*tabelle modi*/ {
+	font-size: 30pt;
+	font-family: Helvetica, sans-serif;
+}
+h1 {
+	font-size: 60pt;
+	font-family: Arial, sans-serif;
+}
+h2 {
+    margin-left: 26%;
+	font-size: 55pt;
+	font-family: Arial, sans-serif;
+}
+p {
+	font-size: 30pt;
+	font-family: Helvetica, sans-serif;
+	text-align:left;
+}
+a {
+	font-size: 25pt;
+	font-family: Arial, sans-serif;
+}
